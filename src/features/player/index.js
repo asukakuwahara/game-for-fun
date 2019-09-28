@@ -12,12 +12,12 @@ function Player(props) {
         top: props.position[1],
         left: props.position[0],
         backgroundImage: `url('${walkingImg}')`,
-        backgroundPosition: "0 0",
+        backgroundPosition: props.spriteLocation,
         width: "40px",
         height: "40px"
       }}
     >
-      <div style={{ width: "1px", height: "1px" }}>
+      {/* <div style={{ width: "1px", height: "1px" }}>
         <div
           style={{
             position: "relative",
@@ -26,8 +26,8 @@ function Player(props) {
             height: "10px",
             width: "10px"
           }}
-        ></div>
-      </div>
+        ></div> */}
+      {/* </div> */}
     </div>
   );
 }

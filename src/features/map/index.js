@@ -6,12 +6,14 @@ const getTileSprite = type => {
   switch (type) {
     case 0:
       return "grass";
-    case 1:
+    case 5:
       return "rock";
-    case 2:
+    case 6:
       return "tree";
-    case 3:
+    case 2:
       return "chest";
+    case 1:
+      return "tree";
   }
 };
 const MapTile = props => {
@@ -25,7 +27,7 @@ const MapTile = props => {
 
 const MapRow = props => {
   return (
-    <div className="row">
+    <div className="row" style={{ height: "40px" }}>
       {props.tiles.map(tile => (
         <MapTile tile={tile} />
       ))}

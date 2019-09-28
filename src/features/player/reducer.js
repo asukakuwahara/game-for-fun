@@ -1,5 +1,8 @@
 const initialState = {
-  position: [0, 0]
+  position: [0, 0],
+  spriteLocation: "0 0",
+  direction: "EAST",
+  walkingIndex: 0
 };
 
 const playerReducer = (state = initialState, action) => {
